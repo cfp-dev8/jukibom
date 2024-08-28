@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+    background-color: #8f0565;
+}
+
+.linea{
+    border-top: 5px solid #8f0565;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #8f0565;
+    opacity: 0.5; /* Opacidad del elemento completo (incluyendo texto) */
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+h2 {
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-top: 50px; /* Establecer un margen superior de 10px */
+}
+
+h3 {
+    text-align: center; /* Centrar horizontalmente el texto dentro del h3 */
+    margin-top: 50px;
+    font-size: 30px;
+    color: #8f0565;
+    background-color: black;
+}
+  
+#enlaceVolver {
+    display: block; /* Convertir en bloque para ocupar todo el ancho disponible */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Agregar margen superior para separarlo de las imágenes */
+    margin-bottom: 20px; /* Agregar un margen inferior de 20px */
+    font-size: 18px; /* Tamaño de fuente */
+    background-color: #8f0565;
+    color: black; /* Color del texto (puedes cambiarlo a tu preferencia) */
+    text-decoration: none; /* Quitar subrayado del enlace */
+  }
+
+/* *************** BOTON WHATSAPP ***************  */
+.btn_wp{
+    width: 80px;
+    position: fixed;
+    float: left;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    animation-name: animacion1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.img-wp{
+    width: 100%;
+}
+.btn_wp:hover{
+    opacity: .5;
+}
+
+
+/* Media query para dispositivos pequeños */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    
+}
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+/* Media query para dispositivos pequeños */
+@media screen and (min-width: 451px) and (max-width: 699px) {
+  
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+/* Media query para dispositivos medianos */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+/* Media query para dispositivos medianos */
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+    
+}
+
+/* Media query para dispositivos grandes */
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
